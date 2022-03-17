@@ -1,0 +1,20 @@
+ParameterName,LocatorType,Locator
+SmallTalk,xpath,//*[@id='popOverEvent_conversationalSkillssmallTalk']
+New_Group,xpath,.//button[text()='New Group']
+Group_Name,xpath,.//input[@placeholder='Enter group name']
+Proceed_Button,xpath,.//div[@id='create-group']//button[text()='Proceed']
+Existing_SmallTalk_Group,xpath,.//span[text()='automation']
+SmallTalk_User_Input,xpath,.//input[@name='smallTalkForm.user']
+SmallTalk_Bot_Input,xpath,.//input[@name='smallTalkForm.bot']
+Add_Button,xpath,.//button[text()='Add']
+SmallTalk_Back_Button,xpath,//*[@id='btFullpageModal']/div/div/bt-small-talk/div[1]/div[1]/div/div[1]/span/i
+SmallTalk_Title,xpath,.//p[text()='Small Talk']
+SmallTalk_Bot_Response,xpath,.//span[contains(text(),'Test Bot Response')]
+SM_Delete,xpath,//*[@class='smalltalkIconSpan delete']
+SM_Delete_btn,id,button-0
+Noty_text,xpath,//span[@class='noty_text']/div/div[2]
+select,xpath,//*[@id="0"]/div/div[2]/div/span[1]/tags-input/div/div
+select2,xpath,//*[@id="1"]/div/div[2]/div/span[1]/tags-input/div/div
+Search_Component,xpath,.//div[@class='smTlakContainer']//div[@class='searchComponent']/input
+Group_Delete_Button,xpath,.//div[contains(@class,'smalltalkIconSpan')]/i
+Group_Delete_Confirmation,xpath,.//button[text()='OK']

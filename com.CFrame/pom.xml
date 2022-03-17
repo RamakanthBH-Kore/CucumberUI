@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.CFrame</groupId>
+	<artifactId>com.CFrame</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>CFramework</name>
+	<description>Automation Framework</description>
+	<properties>
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<!-- use latest artifacts -->
+		<selenium.version>4.1.0</selenium.version>
+		<junit.version>5.8.2</junit.version>
+		<cucumber.version>1.2.6</cucumber.version>
+		<poi.version>5.1.0</poi.version>
+		<poi-ooxml.version>5.1.0</poi-ooxml.version>
+		<poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
+		<dom4j.version>2.1.3</dom4j.version>
+		<xmlbeans.version>3.1.0</xmlbeans.version>
+		<itext.version>4.2.1</itext.version>
+		<cucumber-reporting.version>5.6.1</cucumber-reporting.version>
+		<testng.version>6.14.3</testng.version>
+		<guava.version>31.0.1-jre</guava.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>RunFeature</id>
+			<build>
+				<testResources>
+					<testResource>
+						<directory>src/test/java</directory>
+					</testResource>
+				</testResources>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>${maven.compiler.version}</version>
+						<configuration>
+							<fork>true</fork>
+							<executable>C:\Program Files\Java\jdk-17.0.1\bin\javac.exe</executable>
+							<source>${maven.compiler.source}</source>
+							<target>${maven.compiler.target}</target>
+						</configuration>
+
+					</plugin>
+					
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<version>3.0.0-M5</version> <!--(3.2.0 )-->
+						<artifactId>maven-surefire-plugin</artifactId>
+						<configuration>
+							<forkCount>3</forkCount>
+							<testFailureIgnore>false</testFailureIgnore>
+							<includes>
+								<include>**/TestRunner.java</include>
+							</includes>
+						</configuration>
+					</plugin>
+					
+					
+				</plugins>
+			</build>
+
+		</profile>
+	</profiles>
+
+	<!-- selenium -->
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+    		<groupId>org.junit.jupiter</groupId>
+    		<artifactId>junit-jupiter-api</artifactId>
+    		<version>${junit.version}</version>
+    		<scope>test</scope>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+		<dependency>
+    		<groupId>org.junit.jupiter</groupId>
+    		<artifactId>junit-jupiter-engine</artifactId>
+    		<version>${junit.version}</version>
+    		<scope>test</scope>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
+		<dependency>
+   			 <groupId>org.junit.vintage</groupId>
+  			 <artifactId>junit-vintage-engine</artifactId>
+   			 <version>${junit.version}</version>
+    		 <scope>test</scope>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+		<dependency>
+   			 <groupId>net.sourceforge.htmlunit</groupId>
+    		 <artifactId>htmlunit</artifactId>
+    		 <version>2.55.0</version>
+		</dependency>
+					
+		<!-- cucumber -->
+
+		
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-java</artifactId>
+		    <version>7.1.0</version>
+
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+		<dependency>
+    		<groupId>io.cucumber</groupId>
+    		<artifactId>cucumber-jvm-deps</artifactId>
+    		<version>1.0.6</version>
+
+		</dependency>
+		
+			<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+    		<groupId>io.cucumber</groupId>
+    		<artifactId>cucumber-junit</artifactId>
+    		<version>7.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+		<dependency>
+    		<groupId>io.cucumber</groupId>
+    		<artifactId>cucumber-picocontainer</artifactId>
+    		<version>7.1.0</version>
+  
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-core</artifactId>
+		    <version>7.1.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>gherkin</artifactId>
+		    <version>22.0.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-plugin -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-plugin</artifactId>
+		    <version>7.1.0</version>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
+		<dependency>
+		    <groupId>io.cucumber</groupId>
+		    <artifactId>cucumber-jvm</artifactId>
+		    <version>7.1.0</version>
+		    <type>pom</type>
+		</dependency>
+	
+		
+		<!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
+		<dependency>
+   			 <groupId>com.thoughtworks.xstream</groupId>
+    		 <artifactId>xstream</artifactId>
+    		 <version>1.4.18</version>
+		</dependency>
+			
+
+		<!-- Excel -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi-ooxml.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${poi-ooxml-schemas.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>${dom4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>${xmlbeans.version}</version>
+		</dependency>
+		<!-- Pdf -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>${itext.version}</version>
+		</dependency>
+<!-- 		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+		</dependency> -->
+<!--  <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports-cucumber4-adapter</artifactId>
+    <version>1.2.1</version>
+</dependency>  -->
+
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.1.0</version>
+</dependency>
+
+		
+				<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.0.9</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-java</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		
+		<!-- Read JSON file -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.sf.ucanaccess/ucanaccess -->
+		<dependency>
+			<groupId>net.sf.ucanaccess</groupId>
+			<artifactId>ucanaccess</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- Cucumber reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>${cucumber-reporting.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.jai-imageio</groupId>
+			<artifactId>jai-imageio-core</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+		<!-- guava -->
+		<dependency>
+		<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+			<type>jar</type>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.15</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+    		<groupId>org.apache.commons</groupId>
+    		<artifactId>commons-lang3</artifactId>
+   			<version>3.12.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.22</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		
+	</dependencies>
+</project>

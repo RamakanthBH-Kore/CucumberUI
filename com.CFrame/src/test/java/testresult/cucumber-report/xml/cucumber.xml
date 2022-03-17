@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.282">
+<testcase classname="Kore Account applications" name="Login to Kore" time="0.074">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Then I wait for '2' seconds.................................................undefined
+Given My WebApp 'Kore_applications' is open.................................skipped
+And I clear field 'username'................................................skipped
+And I enter 'vishnuprasath.ramanujam@kore.com' in field 'username'..........skipped
+And I click 'ContinueBtn'...................................................skipped
+And I clear field 'password'................................................skipped
+And I enter 'Kore@123' in field 'password'..................................skipped
+And I click 'Login'.........................................................skipped
+And I wait for Page to Load.................................................skipped
+And I wait '2' seconds for presence of element 'Kore_logo'..................skipped
+Then I wait for '2' seconds.................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Kore Account applications" name="Travel Bot" time="0.008">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When I enter 'Travel Desk_test' in field 'sreach'...........................undefined
+When I click 'My_1st'.......................................................skipped
+Then I wait for Page to Load................................................skipped
+Then I should see element 'mybotname' present on page.......................skipped
+Then I should see text 'Flight Details' present on page.....................skipped
+Then I should see text 'Knowledge Graph' present on page....................skipped
+And I click 'Paths'.........................................................skipped
+Then I wait for Page to Load................................................skipped
+Then I should see element 'KG' present on page..............................skipped
+Then I wait for '3' seconds.................................................skipped
+When I enter 'cruise' in field 'searchkg'...................................skipped
+Then I click 'typ_cruise'...................................................skipped
+Then I wait for '4' seconds.................................................skipped
+And I should see element 'check_cruise' present on page.....................skipped
+]]></failure>
+</testcase>
+<testcase classname="Kore Account applications" name="Clear HashMap" time="0.001">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[And I clear hashmap.........................................................undefined
+]]></failure>
+</testcase>
+</testsuite>

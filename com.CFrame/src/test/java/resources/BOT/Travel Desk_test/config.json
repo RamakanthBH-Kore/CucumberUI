@@ -1,0 +1,89 @@
+{
+    "name": "Travel Desk_test",
+    "envVariables": [
+        {
+            "key": "ConfirmedId",
+            "value": "1686171596",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "CancelledId",
+            "value": "1686010799",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "PendingId",
+            "value": "1684916159",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "STATIC_CONTENT_BASE_URL",
+            "value": "https://ymfqofxj0ogrfpzn3v7raw-on.drv.tw",
+            "variableType": "env",
+            "hint": "BASE URL for static content",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "webSdkLink",
+            "value": "https://demo.kore.ai/demo/template/newsdk2/UI/index_widgets_chat.php?botid=st-ff09565a-4812-5598-93df-a0b107f8eaa5",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "lmgLink",
+            "value": "https://www.lastminute.com/",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        },
+        {
+            "key": "URL_StaticContent",
+            "value": "{{env.STATIC_CONTENT_BASE_URL}}/HRHandbook",
+            "variableType": "env",
+            "hint": "",
+            "scope": "prePopulated",
+            "group": "",
+            "propagateValue": false,
+            "vNameSpace": [
+                "5f9d4707e2bd8b32e8a5fa43"
+            ]
+        }
+    ]
+}

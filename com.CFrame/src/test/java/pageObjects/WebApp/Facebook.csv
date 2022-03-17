@@ -1,0 +1,19 @@
+ParameterName,LocatorType,Locator
+Facebook,url,https://qa1-bots.kore.ai/botbuilder/login
+username,xpath,//input[@name="emailPhone"]
+password,xpath,//input[@placeholder="Password"]
+Login,xpath,//button[text()="Login"]
+ContinueBtn,xpath,//button[@class="continueBtn"]
+Kore_logo,xpath,//img[@class="koreICon"]
+sreach,xpath,(//input[@type='text'])[2]
+My_bot,xpath,(//span[text()='My 1st bot'][@tooltip-placement="bottom"])[2]
+Deploy_menu,xpath,//li[@ng-click="callbacks.navigateTo('deploy')"]
+Channel,id,menuHeader_channles
+facebook_channel,xpath,(//span[text()='Facebook Messenger'])[1]
+CH_Search,xpath,//input[@placeholder="Search"][@tabindex="1"]
+FB_Test,xpath,//span[text()='Test'][@ng-show="showTestBtn(channel)"]
+FB_user,id,email
+FB_pass,id,pass
+FB_Login,id,loginbutton
+FB_chat,xpath,//p[@class="kvgmc6g5 oygrvhab"]
+FB_responce,xpath,//*[@data-testid="message-container"]/div[1]/div[1]/div[1]/span/div/div[1]/div/div

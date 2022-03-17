@@ -1,0 +1,9 @@
+ParameterName,LocatorType,Locator
+Talk2Bot,xpath,//button[@tooltip="Talk To Bot"]
+Chat,xpath,//div[@class="chatInputBox"]
+Chat_window,xpath,//div[@class='kore-chat-window droppable defaultTheme lightTheme-one ui-draggable ui-resizable']
+Hi,xpath,//span[text()='Hi! ']
+Tittle,xpath,//div[@title="Travel Desk_test"]
+CID,xpath,//li[@class="fromCurrentUser "]
+Chat_close,xpath,//button[@class="close-btn"]
+Debug_Btn,classname,bug-btn btnDebug

@@ -1,0 +1,12 @@
+ParameterName,LocatorType,Locator
+signup,url,https://qa1-bots.kore.ai/botbuilder/login
+Signup_btn,xpath,//a[@class="ng-binding"]
+Enter_email,xpath,//input[@name="emailPhone"]
+Click_btn,xpath,//button[text()="Continue"]
+first_name,xpath,//input[@name="koreFN"]
+Last_name,xpath,//input[@name="koreLN"]
+Account_name,xpath,//input[@name="KoreAccNa"]
+Pass_secure,xpath,//input[@name="KoreSecure"]
+confirm_pwd,xpath,//input[@name="KoreSecureConfirm"]
+SignupBtn,text,Sign up
+ToolTip,xpath,//i[@tooltip="Letters(a-z), Numbers(0-9) and Spaces are allowed"]

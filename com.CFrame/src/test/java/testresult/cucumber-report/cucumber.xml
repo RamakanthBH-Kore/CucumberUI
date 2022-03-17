@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="78.077">
+<testcase classname="Login and Create a Bot Functionality" name="Login to kore botbuilder" time="13.145">
+<system-out><![CDATA[Given My WebApp 'test' is open..............................................passed
+Then I wait for '2' seconds.................................................passed
+And I clear field 'username'................................................passed
+And I enter 'sangya.mahapatra@kore.com' in field 'Uname'....................passed
+And I click 'ContinueBtn'...................................................passed
+And I clear field 'password'................................................passed
+And I enter encrypted data 'R3VsdUAxOTk0' in field 'password'...............passed
+And I click 'Login'.........................................................passed
+And I wait for Page to Load.................................................passed
+And I wait '2' seconds for presence of element 'Kore_logo'..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login and Create a Bot Functionality" name="Search for Bot" time="19.492">
+<system-out><![CDATA[Then I wait for '2' seconds.................................................passed
+And I mouse over 'search'...................................................passed
+When I enter 'testbot' in field 'search'....................................passed
+When I click 'testbot'......................................................passed
+Then I wait for Page to Load................................................passed
+Then I wait for '15' seconds................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login and Create a Bot Functionality" name="Create a dialog task" time="14.424">
+<system-out><![CDATA[Then I wait for '5' seconds.................................................passed
+And I wait for Page to Load.................................................passed
+And I click 'DialogTaskButton'..............................................passed
+Then I wait for '2' seconds.................................................passed
+And I click 'CreateDialogButton'............................................passed
+And I wait for Page to Load.................................................passed
+Then I wait for '2' seconds.................................................passed
+And I enter 'Test Intent 01' in field 'IntentNameField'.....................passed
+And I enter 'Test Description 01' in field 'DescriptionField'...............passed
+And I wait for '2' seconds..................................................passed
+And I click 'ProceedButton'.................................................passed
+And I wait for '2' seconds..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login and Create a Bot Functionality" name="Build a dialog task flow" time="28.945">
+<system-out><![CDATA[Then I wait for '3' seconds.................................................passed
+And I wait for Page to Load.................................................passed
+Then I switch to iFrame 'dialogFrame'.......................................passed
+And I click 'AddNodePlusButton'.............................................passed
+And I wait for '2' seconds..................................................passed
+And I click 'EntityOption'..................................................passed
+And I wait for '2' seconds..................................................passed
+And I click 'NewEntityButton'...............................................passed
+And I wait for '5' seconds..................................................passed
+And I click 'NewEntity'.....................................................passed
+And I wait for '5' seconds..................................................passed
+Then I clear field 'EntityName'.............................................passed
+Then I enter 'ColorEntity05' in field 'EntityName'..........................passed
+And I wait for '2' seconds..................................................passed
+Then I clear field 'EntityDisplayName'......................................passed
+Then I enter 'ColorEntity05' in field 'EntityDisplayName'...................passed
+And I wait for '2' seconds..................................................passed
+And I wait for '2' seconds..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login and Create a Bot Functionality" name="Build a dialog task flow 2" time="1.477">
+<failure message="element not interactable&#10;  (Session info: chrome=98.0.4758.102)&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'KI0701', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a34fbed320f93f16e3da676ab01b3f37, sendKeysToElement {id=1d79b2fa-3dff-4858-aafd-245d869c8169, value=[Ljava.lang.CharSequence;@27a9f025}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\VISHNU~1.R\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:59215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59215/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (a34fbed320f93f16e3da676ab01b3f37)] -&gt; class: ng-touched]&#10;Session ID: a34fbed320f93f16e3da676ab01b3f37" type="io.cucumber.core.exception.CucumberException"><![CDATA[Then I focus on element 'UPrompts'..........................................failed
+And I click 'UPrompts'......................................................skipped
+And I enter 'Please enter your search here' in field 'UserPrompts'..........skipped
+And I wait for '2' seconds..................................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: element not interactable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'KI0701', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a34fbed320f93f16e3da676ab01b3f37, sendKeysToElement {id=1d79b2fa-3dff-4858-aafd-245d869c8169, value=[Ljava.lang.CharSequence;@27a9f025}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\VISHNU~1.R\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:59215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59215/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a34fbed320f93f16e3da676ab01b3f37)] -> class: ng-touched]
+Session ID: a34fbed320f93f16e3da676ab01b3f37
+	at stepDefinitions.CommonSteps.I_focus_on_element(CommonSteps.java:802)
+	at ✽.I focus on element 'UPrompts'(file:///D:/Users/Vishnuprasath.R/eclipse-workspace/Automationframework/com.CFrame/src/test/java/features/Test.feature:87)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'KI0701', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a34fbed320f93f16e3da676ab01b3f37, sendKeysToElement {id=1d79b2fa-3dff-4858-aafd-245d869c8169, value=[Ljava.lang.CharSequence;@27a9f025}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\VISHNU~1.R\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:59215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59215/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a34fbed320f93f16e3da676ab01b3f37)] -> class: ng-touched]
+Session ID: a34fbed320f93f16e3da676ab01b3f37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at stepDefinitions.CommonSteps.I_focus_on_element(CommonSteps.java:798)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invokeStatic(Invoker.java:80)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:45)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at Runner.ExtendedCucumberRunner.run(ExtendedCucumberRunner.java:56)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,37 @@
+ParameterName,LocatorType,Locator
+test,url,https://builder.kore.ai/botbuilder
+username,xpath,//input[@name='emailPhone']
+Uname,classname,emailPhoneInpt
+password,xpath,//input[@placeholder='Password']
+Login,xpath,//button[text()='Login']
+ContinueBtn,xpath,//button[@class='continueBtn']
+Kore_logo,xpath,//img[@class='logoIcon']
+NewBotButton2,xpath,//span[contains(text(),'New Bot')]
+StartFromScratchButton,xpath,//div[contains(text(),'Start from Scratch')]
+BotNameField,id,arabicInput
+CreateButton,xpath,//button[normalize-space()='Create']
+DialogTaskButton,xpath,//a[@id='popOverEvent_conversationalSkillsdialogTasks']
+CreateDialogButton,xpath,//button[@class='btn btnSolidBlue ng-binding'][contains(text(),'Create Dialog')]
+IntentNameField,xpath,//input[@id='_createDialog']
+DescriptionField,xpath,//input[@name=' flowTaskDesc']
+ProceedButton,xpath,//div[@class='buttonContainer']/button[contains(text(),'Proceed')]
+BuildTab,xpath,//div[@class='dialogTabs middleTabBorder']
+dialogFrame,id,dialogIFrame
+SourceEntity,xpath,//div[@data-type='entity']
+AddNodePlusButton,xpath,//span[@class='plus ng-star-inserted']
+EntityOption,xpath,//button[contains(text(),'Entity')]
+NewEntityButton,xpath,//div[contains(text(),'+ New Entity')]
+NewEntity,xpath,//span[contains(text(),': String')]
+EntityName,xpath,//input[@placeholder='Name']
+EntityDisplayName,xpath,//input[@placeholder='Display Name']
+TypeDropdown,xpath,//button[@class='dropdown-toggle btn btn-outline-primary']
+Color,xpath,//button[text()='Color'][@class='dropdown-item ng-star-inserted']
+UserPrompts,xpath,//textarea[@class='textArea ng-pristine ng-valid ui-autocomplete-input ng-touched']
+UPrompts,classname,ng-touched
+search,xpath,(//input[@type='text'])[2]
+testbot,xpath,(//span[text()='testbot'])[2]
+Build,xpath,//div[text()='Build'][@class='tabClick ng-binding activeHomeTab']
+ExistingEntityButton,xpath,//div[@class='mat-ripple mat-menu-ripple']
+ExistingEntity,xpath,//span[@title='EntityString']
+Typechange,xpath,//h4[text()='Are you sure?']
+OK,xpath,//button[text()='Ok'][@class='btn kr-btn-primary deleteConfirm']

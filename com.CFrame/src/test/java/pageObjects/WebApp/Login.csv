@@ -1,0 +1,10 @@
+ParameterName,LocatorType,Locator
+BotBuilder,url,https://qa1-bots.kore.ai/botbuilder/login
+username,xpath,//input[@name='emailPhone']
+password,xpath,//input[@placeholder='Password']
+Login,xpath,//button[text()='Login']
+ContinueBtn,xpath,//button[@class='continueBtn']
+Kore_logo,xpath,//img[@class='logoIcon']
+Summary_menu,xpath,//*[@id='menuHeader_botSummary']/h4
+My_1st,xpath,//*[@id='botsFormDir']/bots-content-panel/div[1]/div[1]/ng-transclude/div/div[2]/div/div/div[1]/div[3]/div/div
+mybotname,xpath,//h2[text()='Travel Desk_test']

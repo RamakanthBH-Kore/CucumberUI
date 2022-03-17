@@ -1,0 +1,16 @@
+ParameterName,LocatorType,Locator
+SUMMARY,xpath,//*[@id='menuHeader_botSummary']/h4/a
+CONVERSATIONAL_SKILLS,xpath,//*[@id='menuHeader_conversationalSkills']/h4/a/span
+Knowledge_Graph,xpath,//*[@id='popOverEvent_conversationalSkillsknowledgeCollection']
+Knowledge_Graph_task,xpath,.//p[@class='kcTitle']
+Add_Intent,xpath,.//button[text()='Add Intent']
+Add_Question,xpath,.//textarea[@placeholder='Add question']
+Add_Answer,xpath,.//textarea[@class='ace_text-input']
+Save_button,xpath,//*[@id='botModalSlider']/div/div/ng-transclude/div/div[2]/div/bot-ontology-qa/div/div/div[3]/button[1]
+KG_Search,xpath,.//input[@placeholder='Search FAQ or Intent']
+FAQ_Delete,xpath,//*[@id='faqsCollectectionBody']/div[1]/div[5]/span[2]/i
+FAQ_Delete_Confirmation,xpath,//div[@class='noty_buttons']/button[contains(text(),'OK')]
+Sample_Question,xpath,//*[@id='faqsCollectectionBody']/div[1]/div[3]
+KG_Back_Button,xpath,//*[@id='botDetailsFormDir']/div[5]/div/div/bot-ontology/div[1]/div/div[1]/span/i
+Reference_ID,xpath,//input[@placeholder=" Provide the Reference Id"]
+KG_Scroll,xpath,boqbody

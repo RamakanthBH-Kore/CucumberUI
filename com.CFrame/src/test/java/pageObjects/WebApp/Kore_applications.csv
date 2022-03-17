@@ -1,0 +1,21 @@
+ParameterName,LocatorType,Locator
+Kore_applications,url,https://qa1-bots.kore.ai/botbuilder/login
+username,xpath,//input[@name="emailPhone"]
+password,xpath,//input[@placeholder="Password"]
+Login,xpath,//button[text()="Login"]
+ContinueBtn,xpath,//button[@class="continueBtn"]
+Kore_logo,xpath,//img[@class="logoIcon"]
+Summary_menu,xpath,//*[@id="menuHeader_botSummary"]/h4
+My_1st,xpath,//*[@id="botsFormDir"]/bots-content-panel/div[1]/div[1]/ng-transclude/div/div[2]/div/div/div[1]/div[3]/div/div
+mybotname,xpath,//h2[text()='Travel Desk_test']
+sreach,xpath,(//input[@type='text'])[2]
+Tasks,xpath,//*[@id="tasks"]/div/div[2]/h6/text()
+Paths,xpath,//*[@id="knowledgeCollection"]/div/div[3]/div[1]/div
+KG,xpath,//h4[text()='Knowledge Graph']
+searchkg,xpath,//*[@id="termsearchid"]
+typ_cruise,xpath,//ul[@id='ui-id-2']/li
+check_cruise,xpath,//*[@id="breadcrumbcontainer"]/span[2]/span[2]
+Query_cruise,xpath,(.//*[normalize-space(text()) and normalize-space(.)='Delete Selected'])[1]/following::div[6]
+KG_back,xpath,//*[@class="closeBtn pull-left"][@type="button"]
+Profile,xpath,//button[@tooltip="Account & Profile"]
+Logout,xpath,//h5[@ng-click="logOut()"]

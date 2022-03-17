@@ -1,0 +1,14 @@
+ParameterName,LocatorType,Locator
+Dialog_menu,id,popOverEvent_conversationalSkillsdialogTasks
+create_dialog_button,xpath,.//div[@class='creationButton']/button[text()='Create Dialog']
+intent_name,id,_createDialog
+intent_description,xpath,.//input[contains(@name,' flowTaskDesc')]
+dialog_proceed_button,xpath,.//div[@class='buttonContainer']/button[text()='Proceed']
+dialog_screen_back_button,xpath,.//i[contains(@class,'backArrowGray')]
+dialog_search_textbox,xpath,.//div/div[@class='searchComponent']/input
+dialog_description_text,xpath,.//div[@tooltip='Test description']
+dialog_delete_button,xpath,.//span[@title='Delete']/i
+dialog_delete_confirmation,xpath,.//button[text()='OK']
+Profile,xpath,//button[@tooltip="Account & Profile"]
+Logout,xpath,//h5[@ng-click="logOut()"]
+Dialog_close,xpath,//i[@class="btx-close"][@ng-click="closeDialogCreation()"]

@@ -1,0 +1,3 @@
+ParameterName,LocatorType,Locator
+Profile,xpath,//button[@tooltip="Account & Profile"]
+Logout,xpath,//h5[@ng-click="logOut()"]
